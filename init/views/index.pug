@@ -1,0 +1,23 @@
+head
+  link(rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css")
+
+body
+  .container
+  div
+    h1 Welcome to the auto publisher api!
+    br
+
+  form(action="/publish" method="post")
+      .container
+      div
+          p Title
+          input(type="text", name="title", value="title")
+      
+      .container      
+      div
+          p subreddits - seperate by ","
+          textarea(name="subreddits", cols="20", rows="5", value="subreddits")
+      
+      .container
+      div
+          input(type="submit", value="Submit")
