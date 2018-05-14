@@ -1,6 +1,6 @@
 import fire
 import praw
-from config import config
+from autoPublisher.config import config
 from tqdm import tqdm
 import time
 
