@@ -1,2 +1,2 @@
 # auto_publisher
-Publish on subreddits and on hacker news
+Python CLI to help automatically publish urls on subreddits and on hacker news
