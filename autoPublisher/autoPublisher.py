@@ -1,6 +1,6 @@
 import fire
 import praw
-from autoPublisher.config import config
+from config import config
 from tqdm import tqdm
 import time
 
@@ -21,7 +21,6 @@ class AutoPublisher(object):
 
         for subreddit in tqdm(config['subreddits']):
             self.reddit.subreddit(subreddit).submit(title, url=url).mod.distinguish(sticky=True)
-
             time.sleep(60 * 10)  # Sleep for 10 min
 
 
